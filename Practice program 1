@@ -1,0 +1,16 @@
+val = []
+n = int(input("Enter the value of n: ")) 
+
+for i in range(n):
+    val.append(i)
+
+print(val)
+
+def target(array,target):
+    if target in array:
+        return True
+    else:
+        return False
+Target=int(input("Target number in the array: "))
+result=target(val,Target)
+print("Result:",result)
