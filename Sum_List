@@ -1,0 +1,16 @@
+def find_value(Array, K):
+    for i in range(len(Array)):
+        for j in range(i+1, len(Array)):
+            if Array[i] + Array[j] == K:
+                print("Values at indices", i, "and", j, "sum up to K")
+                return True
+    print("No two values in the array sum up to K")
+    return False
+
+K = int(input("The value to be find in the list: "))
+Array = []
+Val=int(input("The length of the list: "))
+for i in range (Val):
+    val=int(input("The Values that need to be inserted in the list: "))
+    Array.append(val)
+Result = find_value(Array, K)
